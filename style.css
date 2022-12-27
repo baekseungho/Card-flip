@@ -1,0 +1,118 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card{
+  background-image:url(./image/background.jpg);
+  width:500px;
+  height:300px;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  border-radius: 15px;
+  border:1px solid white;
+  transition: .4s;
+  transform-style: preserve-3d;
+}
+.front, .back{
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  backface-visibility: hidden;
+}
+.ic{
+  width:100px;
+  height:90px;
+}
+.visa{
+  width:130px;
+  height:90px;
+}
+.ftop{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-num{
+  color:white;
+  display:flex;
+  font-size:35px;
+  justify-content: space-between;
+  margin:45px 25px 15px 25px;
+}
+ul{
+  list-style: none;
+}
+.card-txt{
+  color:white;
+  display:flex;
+  font-size:13px;
+  justify-content: space-between;
+  margin:35px 25px 0px 25px;
+}
+.card-info{
+  color:white;
+  display:flex;
+  font-size:25px;
+  justify-content: space-between;
+  margin:10px 25px 15px 25px;
+}
+.magnetic{
+  width:100%;
+  margin-top:25px;
+  height:50px;
+  background-color: rgb(26, 26, 26);
+}
+.bmid1{
+  display:flex;
+  justify-content: center;
+  margin-top:20px;
+}
+.memo{
+  width:80%;
+  height:50px;
+}
+.bmid2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:20px 25px 10px 25px;
+  color:white;
+}
+.bbottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+  margin:0px 25px 20px 25px;
+}
+.bbottom img{
+  position: relative;
+  bottom:15px;
+}
+.cvc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:50px;
+  width:50px;
+  background-color: white;
+  font-weight: 700;
+}
+.card:hover{
+  transform: rotateY(180deg);
+}
+.back{
+  transform:rotateY(180deg);
+}
