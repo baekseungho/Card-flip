@@ -12,6 +12,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  perspective:1000px;
 }
 .card{
   background-image:url(./image/background.jpg);
@@ -22,7 +23,7 @@ body{
   background-size:cover;
   border-radius: 15px;
   border:1px solid white;
-  transition: .4s;
+  transition:transform 1500ms;
   transform-style: preserve-3d;
 }
 .front, .back{
